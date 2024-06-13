@@ -26,15 +26,17 @@
    - host your domain DNS on cloudflare
    - add `A` record of xxx.example.com to `192.0.2.1`
    - deploy this project to cloudflare workers
-   - add `xxx.example.com/*` to HTTP routes of workers
-   - add more records and modify the config as you need
+   - add `docker.ksg.us.kg/*` to HTTP routes of workers
+   - add more records and modify the config as you need (optional)
    ```javascript
    const routes = {
-     "docker.libcuda.so": "https://registry-1.docker.io",
-     "quay.libcuda.so": "https://quay.io",
-     "gcr.libcuda.so": "https://k8s.gcr.io",
-     "k8s-gcr.libcuda.so": "https://k8s.gcr.io",
-     "ghcr.libcuda.so": "https://ghcr.io",
+     "docker.ksg.us.kg": "https://registry-1.docker.io",
+     "quay.ksg.us.kg": "https://quay.io",
+     "gcr.ksg.us.kg": "https://gcr.io",
+     "k8s-gcr.ksg.us.kg": "https://k8s.gcr.io",
+     "k8s.ksg.us.kg": "https://registry.k8s.io",
+     "ghcr.ksg.us.kg": "https://ghcr.io",
+     "cloudsmith.ksg.us.kg": "https://docker.cloudsmith.io",
    };
    ```
 
